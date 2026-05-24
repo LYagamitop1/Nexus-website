@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus — Modern Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="container">
+    <!-- Nav -->
+    <nav>
+      <div class="logo">Nexus</div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#cta" class="nav-cta">Get Started</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="hero-badge"><span></span> Now in Public Beta</div>
+      <h1>Build brand that<br>matters with <span>Nexus</span></h1>
+      <p>The modern platform for teams to design, build, and ship digital products — faster than ever.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary">Start Building →</a>
+        <a href="#" class="btn btn-outline">See how it works</a>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients reveal">
+      <p>Trusted by leading teams</p>
+      <div class="client-grid">
+        <span class="client-logo">Vercel</span>
+        <span class="client-logo">Linear</span>
+        <span class="client-logo">Stripe</span>
+        <span class="client-logo">Figma</span>
+        <span class="client-logo">Notion</span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="reveal">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Everything you need to scale</h2>
+        <p class="section-desc">From prototyping to production — a unified workflow for your entire team.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Blazing Fast</h3>
+          <p>Built on edge infrastructure that delivers sub-millisecond response times globally.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔒</div>
+          <h3>Enterprise Security</h3>
+          <p>SOC 2 compliant with end-to-end encryption and granular access controls.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎨</div>
+          <h3>Beautiful Design</h3>
+          <p>Pre-built components and design tokens that make your product look polished out of the box.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🤖</div>
+          <h3>AI-Powered</h3>
+          <p>Smart suggestions and automation that learn from your workflow patterns.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Real-Time Analytics</h3>
+          <p>Live dashboards and insights that help you make data-driven decisions instantly.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🌍</div>
+          <h3>Global by Default</h3>
+          <p>Multi-region deployment with automatic failover and 99.99% uptime SLA.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container stat-grid">
+        <div class="reveal"><div class="stat-number" data-target="99.9">0</div><div class="stat-label">Uptime %</div></div>
+        <div class="reveal"><div class="stat-number" data-target="12">0</div><div class="stat-label">Million Users</div></div>
+        <div class="reveal"><div class="stat-number" data-target="150">0</div><div class="stat-label">Countries</div></div>
+        <div class="reveal"><div class="stat-number" data-target="48">0</div><div class="stat-label">ms Latency</div></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="reveal" style="text-align:center; margin-bottom:56px;">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">Loved by teams worldwide</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Switching to Nexus cut our deployment time from hours to minutes. It's been a game-changer for our team."</blockquote>
+          <div class="author">
+            <div class="avatar">SK</div>
+            <div><div class="name">Sarah Kim</div><div class="role">CTO, Lunar</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The collaboration features are incredible. We went from idea to launch in just two weeks."</blockquote>
+          <div class="author">
+            <div class="avatar">MJ</div>
+            <div><div class="name">Marcus Johnson</div><div class="role">Product Lead, Apex</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"We evaluated every platform out there. Nexus was the clear winner on speed, design, and reliability."</blockquote>
+          <div class="author">
+            <div class="avatar">AL</div>
+            <div><div class="name">Ana Lopez</div><div class="role">VP Eng, Bridge</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta reveal" id="cta">
+      <div class="cta-box">
+        <h2>Ready to build something great?</h2>
+        <p>Join thousands of teams already shipping faster with Nexus. Start your free trial today.</p>
+        <a href="#" class="btn btn-primary">Get Started Free →</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Nexus. Crafted with care.</p>
+    </footer>
+  </div>
+
+
+</body>
+</html>
